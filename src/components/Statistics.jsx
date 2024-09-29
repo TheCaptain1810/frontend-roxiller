@@ -12,7 +12,7 @@ const Statistics = ({ month }) => {
 
   const fetchData = async () => {
     try {
-      const statsRes = await axios.get(`https://roxiller/api/statistics?month=${month}`);
+      const statsRes = await axios.get(`https://roxiller-kvzr.onrender.com/api/statistics?month=${month}`);
       setStatistics(statsRes.data);
     } catch (error) {
       console.error('Error fetching data:', error);

@@ -13,7 +13,7 @@ const BarChartPage = ({ month }) => {
 
   const fetchData = async () => {
     try {
-      const barRes = await axios.get(`https://roxiller/api/bar-chart?month=${month}`);
+      const barRes = await axios.get(`https://roxiller-kvzr.onrender.com/api/bar-chart?month=${month}`);
       setBarChartData(barRes.data);
     } catch (error) {
       console.error('Error fetching data:', error);

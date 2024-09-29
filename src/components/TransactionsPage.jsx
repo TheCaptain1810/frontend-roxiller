@@ -14,7 +14,7 @@ const TransactionsPage = ({ month }) => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const transactionsRes = await axios.get(`https://roxiller/api/combined-data?month=${month}`);
+      const transactionsRes = await axios.get(`https://roxiller-kvzr.onrender.com/api/combined-data?month=${month}`);
       console.log('API Response:', transactionsRes.data);
       setTransactions(transactionsRes.data);
     } catch (error) {

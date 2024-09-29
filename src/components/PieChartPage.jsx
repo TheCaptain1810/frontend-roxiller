@@ -13,7 +13,7 @@ const PieChartPage = ({ month }) => {
 
   const fetchData = async () => {
     try {
-      const pieRes = await axios.get(`https://roxiller/api/pie-chart?month=${month}`);
+      const pieRes = await axios.get(`https://roxiller-kvzr.onrender.com/api/pie-chart?month=${month}`);
       setPieChartData(pieRes.data);
     } catch (error) {
       console.error('Error fetching data:', error);
